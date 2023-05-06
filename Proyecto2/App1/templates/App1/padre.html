@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Protege Tu Futuro - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'App1/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'Inicio' %}">Inicio</a>
+                <a class="navbar-brand" href="{% url 'Gasto' %}">Gasto</a>
+                <a class="navbar-brand" href="{% url 'Ingreso' %}">Ingreso</a>
+                <a class="navbar-brand" href="{% url 'Trading' %}">Trading</a>
+                <a class="btn btn-primary" href="#NADAAUN">INICIAR</a>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900')">
+            <div class="text-center my-5">   
+                <h1 class="text-white fs-3 fw-bolder">Protege Tu Futuro</h1>
+                <h6 class="text-white">Esta aplicacion te permite tener registros de todos tus gastos,</h6>
+                <h6 class="text-white">ingresos y de tus inversiones tambien.</h6>
+                <h6 class="text-white">De esta manera cuidas tu futuro y el de los tuyos tambien.</h6>
+            </div>
+        </header>
+        <!-- Content section-->
+        <section class="py-1"> <!-- 5-->
+            <div class="container my-1"> <!-- 5-->
+                <div class="content-center">
+                    <div class="col-lg-6">
+                        <h2>Administra Tu Futuro</h2>
+                        <p class="lead">Ahora ya puedes registrar el movimiento de tu dinero.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Esto es lo que va a cambiar-->
+
+        {% block contenidoQueCambia %}
+
+        {% endblock %}
+
+       
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                <ul class="list-inline mb-2">
+                    <li class="list-inline-item"><a href="#!">Acerca de Nosotros</a></li>
+                    <li class="list-inline-item">⋅</li>
+                    <li class="list-inline-item"><a href="#!">Contactanos</a></li>
+                    <li class="list-inline-item">⋅</li>
+                    <li class="list-inline-item"><a href="#!">Terminos y condiciones</a></li>
+                    <li class="list-inline-item">⋅</li>
+                    
+                </ul>
+                <p class="text-muted small mb-4 mb-lg-0">&copy; Tercera Pre-Entrega 2023 by Wen !!!.</p>
+            </div>            
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
